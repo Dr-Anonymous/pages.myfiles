@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Editor code</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
+
+        <!-- Codemirror and marked dependencies -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/codemirror.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/codemirror.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/mode/markdown/markdown.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/addon/mode/overlay.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/mode/xml/xml.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.40.0/mode/gfm/gfm.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.5.0/marked.js"></script>
+
+        <!-- HTML editor CSS and JavaScript -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/components/htmleditor.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/components/htmleditor.js"></script>
+    </head>
+    <body>
+    <textarea data-uk-htmleditor="{enablescripts:true, markdown:true}">
+    #Heading
+
+This is an **example** paragraph showing you how to write in markdown syntax. [This is an example link](#)
+
+* Item
+* Item
+* Item
+
+    </textarea>
+    </body>
+</html>
