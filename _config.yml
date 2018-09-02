@@ -1,7 +1,6 @@
 url: https://p.myfiles.ga
 title: pages | myfiles.ga
 description: your pages
-theme: jekyll-theme-hacker
 timezone: Asia/Calcutta
 exclude: []
 keep_files: [keep]
