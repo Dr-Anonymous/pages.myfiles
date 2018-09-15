@@ -24,15 +24,18 @@
     <h1>Heading</h1>
 
 <p>This is an <strong>example</strong> paragraph showing you how to use this designer. To the right, you can see how this code actually looks as a web page. You can remove all this and write your own code. Once you are done, just hit the mail button at the bottom of this page. If that doesn't redirect you to another page then just copy paste all your code to mail and enter subject as mypage and mail it to mail@orthosam.com</p>
-<p>This is an example <a href="./">link that takes you back</a> to home page. You can include pics like this-</p><img src="https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
-        <p>You can learn how to build a web page at <a href="https://www.w3schools.com/html/default.asp">W3schools website</a>
+<p>This is an example <a href="./">link that takes you back</a> to home page. You can include pics like this-</p>
+
+<img src="https://images.pexels.com/photos/673020/pexels-photo-673020.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
+
+<p>You can learn how to build a web page at <a href="https://www.w3schools.com/html/default.asp">W3schools website</a></p>
         
     </textarea>
         <center><button onclick="sendMail();">Mail this code</button></center>
         
     <script>
     function sendMail(){
-        var code = encodeURI($('textarea#code').val());
+        var code = encodeURIComponent($('textarea#code').val());
         var url= "mailto:mail@orthosam.com?subject=mypage&body="+code;
     window.location.href = url;
     }
