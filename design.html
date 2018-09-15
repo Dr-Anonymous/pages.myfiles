@@ -33,6 +33,14 @@
 </ul>    
         
     </textarea>
-        <p><a href="mailto:mail@orthosam.com?subject=mypage&body=hello there">Mail the code</a></p>
+        <center><button onclick="sendMail();">Mail this code</button></center>
+        
+    <script>
+    function sendMail(){
+        var code = encodeURI($('textarea#code').val());
+        var url= "mailto:mail@orthosam.com?subject=mypage&body="+code;
+    window.location.href = url;
+    }
+    </script>
     </body>
 </html>
